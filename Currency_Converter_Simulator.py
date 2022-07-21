@@ -29,11 +29,10 @@ conn.send(name.encode())                # send app name
 while True:
     message = input(str(name+": "))
     if message == "EXIT":               # exit if the message is EXIT
-        s.send(message.encode())
+        conn.send(message.encode())
         print("Exiting...\n")
         break
     conn.send(message.encode())         # send app message
-    #s.send(message.encode())
     message = conn.recv(1024)           # receive message from microservice
     message = message.decode()
     print(s_name + ":", message)        # display message from microservice
