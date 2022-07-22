@@ -25,6 +25,15 @@ s_name = s_name.decode()                # store name of microservice for ease of
 print("Type EXIT to quit")
 conn.send(name.encode())                # send app name
 
+
+#######################################################################################################
+# Communication Pipeline
+#
+#
+#######################################################################################################
+def reqCurrencyInfo(message):
+    conn.send(message.encode())
+
 # Continuous Communication Pipeline
 while True:
     message = input(str(name+": "))
@@ -32,7 +41,7 @@ while True:
         conn.send(message.encode())
         print("Exiting...\n")
         break
-    conn.send(message.encode())         # send app message
+    reqCurrencyInfo(message)            # send app message
     message = conn.recv(1024)           # receive message from microservice
     message = message.decode()
     print(s_name + ":", message)        # display message from microservice
