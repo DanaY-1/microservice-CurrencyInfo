@@ -67,5 +67,6 @@ while True:
     for k in currency_info.keys():              # respond with appropriate currency
         if message == k:
             message = currency_info[k]
-            s.send(message.encode())           
+            s.send(message.encode())
+            print(name + ":", message)           
     
