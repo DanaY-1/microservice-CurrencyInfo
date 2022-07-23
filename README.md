@@ -27,7 +27,7 @@ A UML sequence diagram is provided to describe the communication between the Cur
 In the diagram, the reqCurrencyInfo() function represents the request call (provided earlier) and sends the encoded message containing the name of the currency as a string.
 The microservice sends back an encoded message with the currency information as a string.
 The Currency Converter application may send an encoded message with the text string "EXIT" to close the microservice connection.
-![UML Sequence Diagram](UML-Diagram-Currency-Info-Microservice.jpg)
+![UML Sequence Diagram](UML-Diagram-Currency-Info-Microservice.JPG)
 
 ### Simulation provided:
 A simulated Currency Converter application is provided in this repository to test socket communication.
