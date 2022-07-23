@@ -5,8 +5,7 @@ The microservice_CurrencyInfo.py program is a microservice that provides informa
 This microservice is intended to communicate with a Currency Converter application via a socket connection.
 
 How to Run:
-Prior to launching, ensure that the Currency Converter application and the microservice are both configured to connect and communicate over the same host and port.
-The microservice is currently configured to connect to host='localhost' port=1234. Update these parameters as needed to ensure socket commmunication
+Prior to launching, ensure that the Currency Converter application and the microservice are both configured to connect and communicate over the same host and port. The microservice is currently configured to connect to host='localhost' port=1234. Update these parameters as needed to ensure socket commmunication
 is set up correctly.
 
 The Currency Converter application should be launched first. The Currency Converter application should set up a socket connection and listen for the microservice.
