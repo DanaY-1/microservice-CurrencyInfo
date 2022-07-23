@@ -1,5 +1,5 @@
 # microservice-CurrencyInfo
-Microservice to Currency Converter Application
+## Microservice to Currency Converter Application
 
 The microservice_CurrencyInfo.py program is a microservice that provides information on a requested currency.
 This microservice is intended to communicate with a Currency Converter application via a socket connection.
