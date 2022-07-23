@@ -12,15 +12,13 @@ The Currency Converter application should be launched first. The Currency Conver
 
 ### How to Make a Request to the Microservice:
 Once the Currency Converter application and microservice are connected to the socket, the Currency Converter application may send requests to the microservice to get information about a specific currency. The Currency Converter application may request a currency's information by sending an encoded message over the socket which contains the currency name as a string. An example request call is provided below:
-```
-    message = "United States dollar"
-    conn.send(message.encode())
-```
+```message = "United States dollar"
+   conn.send(message.encode())```
 
 ### How to Receive Data from the Microservice: 
 The microservice will receive the request and send back an encoded message which contains the currency information as a string. The Currency Converter application should receive the message over the socket connection and decode it to access the currency information. An example receive call by the Currency Converter application is provided below:
-    message = conn.recv(1024)
-    message = message.decode()
+```message = conn.recv(1024)
+   message = message.decode()```
 
 If the Currency Converter application requests information for a currency that the microservice has no data, the microservice will return the message "No information available" to the Currency Converter application.
 
