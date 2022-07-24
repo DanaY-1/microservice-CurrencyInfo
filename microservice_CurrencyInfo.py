@@ -28,28 +28,53 @@ print("Enter message to send...")
 
 # Currency Data
 currency_info = {
-    "United States dollar": """The United States dollar (symbol: $; code: USD; also abbreviated US$ or U.S. Dollar, 
-    to distinguish it from other dollar-denominated currencies; referred to as the dollar, U.S. dollar, American dollar, 
-    or colloquially buck) is the official currency of the United States and several other countries.
+    "USD": """The United States dollar (symbol: $; code: USD; also abbreviated US$ or U.S. Dollar,\
+to distinguish it from other dollar-denominated currencies; referred to as the dollar, U.S. dollar, American dollar,\
+or colloquially buck) is the official currency of the United States and several other countries. 
     """,
-    "European Euro": """The euro (symbol: €; code: EUR) is the official currency of 19 out of the 27 member states 
-    of the European Union. This group of states is known as the eurozone or, officially, the euro area, and 
-    includes about 349 million citizens as of 2019. The euro is divided into 100 cents. 
+    "UER": """The euro (symbol: €; code: EUR) is the official currency of 19 out of the 27 member states \
+of the European Union. This group of states is known as the eurozone or, officially, the euro area, and \
+includes about 349 million citizens as of 2019. The euro is divided into 100 cents. 
     """,
-    "New Zealand dollar": """The New Zealand dollar (Māori: tāra o Aotearoa; sign: $, NZ$; code: NZD) is the official 
-    currency and legal tender of New Zealand, the Cook Islands, Niue, the Ross Dependency, Tokelau, and a British territory, 
-    the Pitcairn Islands. Within New Zealand, it is almost always abbreviated with the dollar sign ($), with "NZ$" sometimes 
-    used to distinguish it from other dollar-denominated currencies.
+    "GBP": """The pound (sign: £) is the main unit of sterling, and the currency itself may be referred to by the \
+compound noun pound sterling or the term British pound, although neither of these are official names of the \
+currency. One pound is subdivided into 100 pence (singular: 'penny', abbreviated: 'p'). \
+
+Sterling is the world's oldest currency that is still in use and that has been in continuous use since its inception. \
+It is currently the fourth most-traded currency in the foreign exchange market, after the United States dollar, the euro, \
+and the Japanese yen. Together with those three currencies and Renminbi, it forms the basket of currencies which calculate \
+the value of IMF special drawing rights. As of mid-2021, sterling is also the fourth most-held reserve currency in global reserves. \
+All these currencies are government-issued fiat currencies. 
     """,
-    "Mexican peso": """The Mexican peso (symbol: $; code: MXN) is the currency of Mexico. Modern peso and dollar 
-    currencies have a common origin in the 16th–19th century Spanish dollar, most continuing to use its sign, "$".
+    "CAD": """The Canadian dollar (symbol: $; code: CAD; French: dollar canadien) is the currency of Canada. \
+It is abbreviated with the dollar sign $, or sometimes CA$, Can$ or C$ to distinguish it from other dollar-denominated \
+currencies. It is divided into 100 cents (¢). 
     """,
-    "Canadian dollar": """The Canadian dollar (symbol: $; code: CAD; French: dollar canadien) is the currency of Canada. 
-    It is abbreviated with the dollar sign $, or sometimes CA$, Can$ or C$ to distinguish it from other dollar-denominated 
-    currencies. It is divided into 100 cents (¢). 
+    "JPY": """The yen (Japanese: 円, symbol: ¥; code: JPY; also abbreviated as JP¥) is the official currency of Japan. It is the \
+third-most traded currency in the foreign exchange market, after the United States dollar (US$) and the euro. It is also widely \
+used as a third reserve currency after the US dollar and the euro. 
     """,
-    "Peruvian sol": """The sol (Spanish pronunciation: [ˈsol]; plural: soles; currency sign: S/) is the currency of Peru; 
-    it is subdivided into 100 céntimos ("cents"). The ISO 4217 currency code is PEN. 
+    "MXN": """The Mexican peso (symbol: $; code: MXN) is the currency of Mexico. Modern peso and dollar \
+currencies have a common origin in the 16th–19th century Spanish dollar, most continuing to use its sign, "$".
+    """,
+    "CHF": """The Swiss franc (German: Franken, French: franc, Italian: franco and Romansh: franc; sign: Fr. (in German language), \
+fr. (in French, Italian, Romansh languages), or CHF in any other language, or internationally; code: CHF) is the currency and \
+legal tender of Switzerland and Liechtenstein. It is also legal tender in the Italian exclave of Campione d'Italia. The Swiss National \
+Bank (SNB) issues banknotes and the federal mint Swissmint issues coins. 
+    """,
+    "AMD": """The dram (Armenian: դրամ; sign: ֏; code: AMD) is the monetary unit of Armenia and the neighboring Republic of Artsakh. It was \
+historically subdivided into 100 luma (Armenian: լումա). The word "dram" translates into English as "money" and is cognate with the Greek \
+drachma and the Arabic dirham, as well as the English weight unit dram. The first instance of a dram currency was in the period from 1199 to 1375, \
+when silver coins called dram were issued.
+    """,
+    "AUD": """The Australian dollar (sign: $; code: AUD) is the currency of Australia, including its external territories: Christmas Island, Cocos (Keeling) \
+Islands, and Norfolk Island. It is officially used as currency by three independent Pacific Island states: Kiribati, Nauru, and Tuvalu. It is legal tender \
+in Australia. Within Australia, it is almost always abbreviated with the dollar sign ($), with A$ or AU$ sometimes used to distinguish it from other \
+dollar-denominated currencies. The $ symbol precedes the amount. It is subdivided into 100 cents. 
+    """,
+    "BRL": """The Brazilian real (pl. reais; sign: R$; code: BRL) is the official currency of Brazil. It is subdivided into 100 centavos. The Central Bank of Brazil \
+is the central bank and the issuing authority. The real replaced the cruzeiro real in 1994. \
+As of April 2019, the real was the twentieth most traded currency.
     """
 }
 
