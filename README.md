@@ -14,9 +14,9 @@ is set up correctly.
 The Currency Converter application should be launched first. The Currency Converter application should set up a socket connection and listen for the microservice. The microservice should be launched after the Currency Converter application has established a socket connection. After the microservice is launched, it will connect to the socket provided by the Currency Converter application.
 
 ### How to Make a Request to the Microservice:
-Once the Currency Converter application and microservice are connected to the socket, the Currency Converter application may send requests to the microservice to get information about a specific currency. The Currency Converter application may request a currency's information by sending an encoded message over the socket which contains the currency name as a string. An example request call is provided below:
+Once the Currency Converter application and microservice are connected to the socket, the Currency Converter application may send requests to the microservice to get information about a specific currency. The Currency Converter application may request a currency's information by sending an encoded message over the socket which contains the currency code as a string. An example request call is provided below:
 ```
-message = "United States dollar"
+message = "USD"
 conn.send(message.encode())
 ```
 
