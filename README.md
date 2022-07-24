@@ -6,7 +6,7 @@ This microservice is intended to communicate with a Currency Converter applicati
 
 ### How to Run:
 
-Required data library imports are: import socket, import json, import time, import sys
+Required data library imports are: import socket, import time, import sys
 
 Prior to launching, ensure that the Currency Converter application and the microservice are both configured to connect and communicate over the same host and port. The microservice is currently configured to connect to host='localhost' port=1234. Update these parameters as needed to ensure socket commmunication
 is set up correctly.
