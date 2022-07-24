@@ -4,7 +4,7 @@
 The microservice_CurrencyInfo.py program is a microservice that provides information on a requested currency.
 This microservice is intended to communicate with a Currency Converter application via a socket connection.
 
-### Communication Pipeling:
+### Communication Pipeline:
 Socket
 
 ### How to Run:
@@ -16,7 +16,7 @@ is set up correctly.
 
 The Currency Converter application should be launched first. The Currency Converter application should set up a socket connection and listen for the microservice. The microservice should be launched after the Currency Converter application has established a socket connection. After the microservice is launched, it will connect to the socket provided by the Currency Converter application and is ready to receive requests from the app immediately.
 
-Start Sequence
+#### Start Sequence
 1. Launch Currency Converter application - sets up socket
 2. Launch Microservice - connects to socket on start up
 3. Microservice is ready to receive requests immediately
@@ -25,7 +25,9 @@ Start Sequence
 Once the Currency Converter application and microservice are connected to the socket, the Currency Converter application may send requests to the microservice to get information about a specific currency. The Currency Converter application may request a currency's information by sending an encoded message over the socket which contains the currency code as a string. 
 
 Pseudocode request call from app:
-```reqCurrencyInfo("Currency Code")```
+```
+reqCurrencyInfo("Currency Code")
+```
 
 An example request call is provided below (python):
 ```
@@ -37,7 +39,9 @@ conn.send(message.encode())
 The microservice will receive the request and send back an encoded message which contains the currency information as a string. The Currency Converter application should receive the message over the socket connection and decode it to access the currency information. 
 
 Microservice responds with currency information as a string:
-```message = "currency information" ```
+```
+message = "currency information" 
+```
 
 An example receive call by the Currency Converter application is provided below (python):
 ```
