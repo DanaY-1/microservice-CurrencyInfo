@@ -26,13 +26,17 @@ s_name = s_name.decode()                        # store name of app for ease of 
 print("Type EXIT to quit")
 print("Enter message to send...")
 
+#######################################################################################################
 # Currency Data
+#
+#
+#######################################################################################################
 currency_info = {
     "USD": """The United States dollar (symbol: $; code: USD; also abbreviated US$ or U.S. Dollar,\
 to distinguish it from other dollar-denominated currencies; referred to as the dollar, U.S. dollar, American dollar,\
 or colloquially buck) is the official currency of the United States and several other countries. 
     """,
-    "UER": """The euro (symbol: €; code: EUR) is the official currency of 19 out of the 27 member states \
+    "EUR": """The euro (symbol: €; code: EUR) is the official currency of 19 out of the 27 member states \
 of the European Union. This group of states is known as the eurozone or, officially, the euro area, and \
 includes about 349 million citizens as of 2019. The euro is divided into 100 cents. 
     """,
@@ -78,6 +82,11 @@ As of April 2019, the real was the twentieth most traded currency.
     """
 }
 
+#######################################################################################################
+# Communication Pipeline
+#
+#
+#######################################################################################################
 # Continuous Communication Pipeline
 while True:
     message = s.recv(1024)                      # receive message from app (Currency Converter)
